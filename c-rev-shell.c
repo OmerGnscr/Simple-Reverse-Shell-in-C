@@ -15,7 +15,7 @@ PROCESS_INFORMATION pinfo;
 
 int main(int argc, char *argv[]){
 
-    int start = WSAStartup(MAKEWORD(2,2), &wsaData);
+    WSAStartup(MAKEWORD(2,2), &wsaData);
 
     winSock = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL, 0, 0);
 
